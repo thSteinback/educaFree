@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+.hero {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero .btn {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.course {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    width: calc(33.333% - 2rem);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-align: center;
+}
+
+.course h3 {
+    margin: 0;
+}
+
+.course p {
+    margin: 0.5rem 0;
+}
+
+.course-detail {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.course-detail ul {
+    list-style: none;
+    padding: 0;
+}
+
+.course-detail ul li {
+    background-color: #f4f4f4;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
