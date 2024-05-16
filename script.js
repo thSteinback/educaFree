@@ -46,7 +46,7 @@ function displayCourseDetail(container) {
             <h2>${course.title}</h2>
             <p>${course.description}</p>
             <ul>${course.lessons.map(lesson => `<li>${lesson}</li>`).join('')}</ul>
-            <a href="courses.html" class="btn">Back to Courses</a>
+            <a href="courses.html" class="btn">Voltar</a>
         `;
     } else {
         container.innerHTML = '<p>Curso não encontrado...</p>';
@@ -94,7 +94,7 @@ function displayCourseDetail(container) {
                     </li>
                 `).join('')}
             </ul>
-            <a href="courses.html" class="btn btn-secondary">Back to Courses</a>
+            <a href="courses.html" class="btn btn-secondary">Voltar</a>
         `;
        
     } else {
