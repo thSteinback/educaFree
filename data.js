@@ -1,3 +1,5 @@
+//RESPONSVIDADE, INFOS E LINKS DA ABA CURSOS
+
 const courses = [
     {
         id: 1,

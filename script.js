@@ -1,3 +1,5 @@
+//TODA PARTE DE RESPONSIVIDADE E ENQUADRAMENTO DAS PAGINAS
+
 document.addEventListener("DOMContentLoaded", () => {
     const featuredCoursesContainer = document.getElementById('featured-courses');
     const allCoursesContainer = document.getElementById('all-courses');
