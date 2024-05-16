@@ -77,3 +77,27 @@ function createCourseElement(course) {
     });
     return courseElement;
 }
+function displayCourseDetail(container) {
+    const params = new URLSearchParams(window.location.search);
+    const courseId = parseInt(params.get('id'));
+    const course = courses.find(course => course.id === courseId);
+
+    if (course) {
+        container.innerHTML = `
+            <h2>${course.title}</h2>
+            <p>${course.description}</p>
+            <ul>
+                ${course.lessons.map(lesson => `
+                    <li>
+                        <span>${lesson.title}</span>
+                        <a href="${lesson.youtubeLink}" target="_blank" class="btn btn-primary btn-sm ml-2">Watch on YouTube</a>
+                    </li>
+                `).join('')}
+            </ul>
+            <a href="courses.html" class="btn btn-secondary">Back to Courses</a>
+        `;
+       
+    } else {
+        container.innerHTML = '<p>Curso não encontrado...</p>';
+    }
+}

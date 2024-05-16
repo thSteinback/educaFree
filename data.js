@@ -3,26 +3,74 @@ const courses = [
         id: 1,
         title: "Introdução ao Desenvolvimento WEB",
         description: "Aprenda o básico de desenvolvimento WEB em: HTML, CSS e JavaScript.",
-        lessons: ["Noções básicas de HTML", "Fundamentos de CSS", "Fundamentos de JavaScript"]
-    },
+        lessons: [ {
+            title: "Noções básicas de HTML",
+            youtubeLink: "https://www.youtube.com/watch?v=OqhvNN7OptQ&t=500s"
+        },
+        {
+            title: "Fundamentos de CSS",
+            youtubeLink: "https://www.youtube.com/watch?v=OqhvNN7OptQ&t=500s"
+        },
+        {
+            title: "Fundamentos de JavaScript",
+            youtubeLink: "https://www.youtube.com/watch?v=OqhvNN7OptQ&t=500s"
+        }
+    ]
+},
     {
         id: 2,
         title: "Técnicas avançadas de JavaScript",
         description: "Aprimore suas habilidades em JavaScript com técnicas e padrões avançados.",
-        lessons: ["JavaScript assíncrono", "Padrões de design JavaScript", "Funções Avançadas"]
-    },
+        lessons: [ {
+            title: "JavaScript assíncrono",
+            youtubeLink: "https://www.youtube.com/watch?v=OqhvNN7OptQ&t=500s"
+        },
+        {
+            title: "Padrões de design JavaScript",
+            youtubeLink: "https://www.youtube.com/watch?v=OqhvNN7OptQ&t=500s"
+        },
+        {
+            title:  "Funções Avançadas" ,
+            youtubeLink: "https://www.youtube.com/watch?v=OqhvNN7OptQ&t=500s"
+        }
+    ]
+},
     {
         id: 3,
         title: "Padrões de Projeto em Engenharia de Software",
         description: "Compreender padrões de design comuns e como aplicá-los no desenvolvimento de software.",
-        lessons: ["Padrão de Singleton", "Padrão Observador", "Padrão de Fábrica"]
-    },
+        lessons: [   {
+            title: "Padrão de Singleton",
+            youtubeLink: "https://www.youtube.com/watch?v=OqhvNN7OptQ&t=500s"
+        },
+        {
+            title: "Padrão Observador",
+            youtubeLink: "https://www.youtube.com/watch?v=OqhvNN7OptQ&t=500s"
+        },
+        {
+            title: "Padrão de Fábrica",
+            youtubeLink: "https://www.youtube.com/watch?v=OqhvNN7OptQ&t=500s"
+        }
+    ]
+},
     {
         id: 4,
         title: "Desenvolvimento de Aplicativos Móveis",
         description: "Aprenda a criar aplicativos móveis para iOS e Android.",
-        lessons: ["Desenvolvimento iOS com Swift", "Desenvolvimento Android com Kotlin", "UI/UX Design para Mobile"]
-    },
+        lessons: [{
+            title: "Desenvolvimento iOS com Swift",
+            youtubeLink: "https://www.youtube.com/watch?v=OqhvNN7OptQ&t=500s"
+        },
+        {
+            title: "Desenvolvimento Android com Kotlin",
+            youtubeLink: "https://www.youtube.com/watch?v=OqhvNN7OptQ&t=500s"
+        },
+        {
+            title: "UI/UX Design para Mobile",
+            youtubeLink: "https://www.youtube.com/watch?v=OqhvNN7OptQ&t=500s"
+        }
+    ]
+},
     {
         id: 5,
         title: "Análise de Dados com Python",
