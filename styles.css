@@ -1,3 +1,12 @@
+/* SET GLOBAL STYLES */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,18 +14,79 @@ body {
     background-color: #f4f4f4;
 }
 
+/* -- NAVBAR -- */
 header {
-    background-color: #333;
+    background: linear-gradient(to right, #dbe5eb, #edac79);
     color: #fff;
     padding: 1rem;
     text-align: center;
 }
 
-header nav a {
-    color: #fff;
-    margin: 0 1rem;
-    text-decoration: none;
+.navbar {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
 }
+
+.navbar-logo  {
+    color: black;
+    height: 40px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.navbar-menu {
+
+    background-color: white;
+    margin-left: 130px;
+    margin-right: 130px;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    flex-grow: 1;
+    justify-content: center; /* Centraliza o menu */
+    border: 1px solid #000000;
+    border-radius: 30px;
+}
+
+.navbar-menu li {
+    margin: 15px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+}
+
+.login-btn, .signup-btn {
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.login-btn {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.signup-btn {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid black;
+}
+
+
+/* SEPARAÇÃO */
 
 main {
     padding: 2rem;
