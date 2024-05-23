@@ -1,5 +1,6 @@
-/* SET GLOBAL STYLES */
-
+/* ------------------------------------------------------------------------------ */
+/*--------------------------------- GLOBAL STYLES --------------------------------*/
+/* -------------------------------------------------------------------------------*/
 
 * {
     margin: 0;
@@ -14,9 +15,11 @@ body {
     background-color: #f4f4f4;
 }
 
-/* -- NAVBAR -- */
+/* ----------------------------------------------------------------------- */
+/*--------------------------------- NAVBAR --------------------------------*/
+/* ------------------------------------------------------------------------*/
 header {
-    background: linear-gradient(to right, #dbe5eb, #edac79);
+    background: linear-gradient(to right, #de5e5b, #edae79);
     color: #fff;
     padding: 1rem;
     text-align: center;
@@ -24,11 +27,12 @@ header {
 
 .navbar {
     display: flex;
-    justify-content: center;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
-.navbar-logo  {
+.navbar-logo {
     color: black;
     height: 40px;
     margin-top: 15px;
@@ -36,30 +40,40 @@ header {
 }
 
 .navbar-menu {
-
-    background-color: white;
-    margin-left: 130px;
-    margin-right: 130px;
-    padding: 0;
     display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
     flex-grow: 1;
-    justify-content: center; /* Centraliza o menu */
-    border: 1px solid #000000;
-    border-radius: 30px;
+    justify-content: center;
 }
 
 .navbar-menu li {
-    margin: 15px;
+    margin: 0 20px; /* Aumenta o espaço entre os itens do menu */
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra aos botões */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adiciona transição suave */
+}
+
+.navbar-menu li:hover {
+    background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-3px); /* Efeito de elevação ao passar o mouse */
 }
 
 .navbar-menu a {
     text-decoration: none;
     color: #000;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-.navbar-actions {
+.navbar-menu a:hover {
+    color: #de5e5b; /* Altera a cor do texto ao passar o mouse */
+}
+
+.navbar-buttons {
     display: flex;
     align-items: center;
 }
@@ -71,6 +85,7 @@ header {
     font-size: 16px;
     cursor: pointer;
     border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adiciona transição suave */
 }
 
 .login-btn {
@@ -79,10 +94,20 @@ header {
     border: 1px solid white;
 }
 
+.login-btn:hover {
+    background-color: #333; /* Altera a cor de fundo ao passar o mouse */
+    transform: translateY(-3px); /* Efeito de elevação ao passar o mouse */
+}
+
 .signup-btn {
     background-color: #fff;
     color: #000;
     border: 1px solid black;
+}
+
+.signup-btn:hover {
+    background-color: #f0f0f0; /* Altera a cor de fundo ao passar o mouse */
+    transform: translateY(-3px); /* Efeito de elevação ao passar o mouse */
 }
 
 
