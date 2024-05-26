@@ -182,3 +182,73 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* PAGINA DE LOGIN */
+
+.quadrado-login {
+  
+    position: absolute;
+    width: 399px;
+    height: 487px;
+    left: 90px;
+    top: 170px;
+    background: #ffffff;
+    border: 2px solid #000;
+    border-radius: 11px;
+    text-align: center;
+}
+
+.conecte-se {
+
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+    top: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa-texto-email {
+
+    position: relative;
+    width: 335px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    top: 160px;
+}
+
+.caixa-texto-senha {
+
+    position: relative;
+    width: 335px;
+    height: 50px;
+    top: 210px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.botao-login {
+
+    border: none;
+    padding: 15px 60px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 250px;
+    background: linear-gradient(to right, #C1DEE8, #F6A355);
+}
+
+.botao-cadastro {
+
+    font-size: 14px;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    text-decoration-line: underline;
+}
