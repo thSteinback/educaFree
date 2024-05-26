@@ -251,4 +251,5 @@ footer {
     background-color: transparent;
     font-weight: bold;
     text-decoration-line: underline;
+    cursor: pointer;
 }
