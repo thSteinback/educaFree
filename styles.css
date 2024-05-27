@@ -26,17 +26,32 @@ header {
 }
 
 .navbar {
+    height: 60px; /* Ajuste este valor conforme necessário */
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    overflow: hidden; /* Esconde qualquer conteúdo que exceda a altura da navbar */
+    padding: 0; /* Remove o padding da navbar */
+    margin: 0; /* Remove a margin da navbar */
 }
 
-.navbar-logo {
+.navbar * {
+    padding: 0; /* Remove o padding de todos os elementos dentro da navbar */
+    margin: 0; /* Remove a margin de todos os elementos dentro da navbar */
+}
+
+.navbar-logo a {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente no centro */
     color: black;
-    height: 40px;
-    margin-top: 15px;
+    margin-top: 0px;
     font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-logo img {
+    max-width: 80px; /* Ajuste este valor conforme necessário */
+    height: auto;
+    margin-right: 10px; /* Adiciona algum espaço entre a imagem e o texto */
 }
 
 .navbar-menu {
@@ -48,14 +63,25 @@ header {
     justify-content: center;
 }
 
+
+.navbar-menu .nav-onpage {
+    background-color: black;
+}
+
+.navbar-menu .nav-onpage a {
+    color: white; 
+}
+
 .navbar-menu li {
-    margin: 0 20px; /* Aumenta o espaço entre os itens do menu */
+    margin: 0px 20px; /* Aumenta o espaço entre os itens do menu */
     padding: 10px 20px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra aos botões */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Adiciona transição suave */
 }
+
+
 
 .navbar-menu li:hover {
     background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
