@@ -233,29 +233,28 @@ footer {
     font-size: 30px;
     line-height: 38px;
     top: 30px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
 }
 
 .caixa-texto-email {
 
     position: relative;
-    width: 335px;
-    height: 50px;
+    width: 300px;
+    height: 40px;
     border: 1px solid black;
     border-radius: 5px;
     top: 160px;
+    padding: 10px;
 }
 
 .caixa-texto-senha {
 
     position: relative;
-    width: 335px;
-    height: 50px;
+    width: 300px;
+    height: 40px;
     top: 210px;
     border: 1px solid black;
     border-radius: 5px;
+    padding: 10px;
 }
 
 .botao-login {
@@ -271,6 +270,63 @@ footer {
 }
 
 .botao-cadastro {
+
+    font-size: 14px;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+/* PAGINA DE CADASTRO */
+
+.junte-se {
+
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+    top: 30px;
+}
+
+.caixa-texto-nome {
+
+    position: relative;
+    width: 300px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    top: 140px;
+    padding: 10px;
+}
+
+.caixa-texto-email-registro {
+
+    position: relative;
+    width: 300px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    top: 175px;
+    padding: 10px;
+}
+
+.botao-cadastre-se {
+
+    border: none;
+    padding: 15px 60px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 250px;
+    background: linear-gradient(to right, #C1DEE8, #F6A355);
+}
+
+.botao-faça-login {
 
     font-size: 14px;
     border: none;
