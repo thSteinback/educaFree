@@ -1,0 +1,305 @@
+<!DOCTYPE html> <!--Header sem login-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducaFree</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <script defer src="swiper-bundle.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="home.html">
+                    <img src="imagem/logo.png" alt="Logo">
+                </a>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="courses.html">Cursos</a></li>
+                <li><a href="certificates.html">Certificados</a></li>
+                <li><a href="services.html">Serviços</a></li>
+                <li><a href="tasks.html">Tarefas</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+            <div class="navbar-buttons">
+                <button class="login-btn">Fazer login</button>
+                <button class="signup-btn">Cadastre-se</button>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menu()"><img src="imagem\menu.png" alt="menu" class="icon"></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul class="navbar-menu">
+                <li><a href="#">Sobre</a></li>
+                <li><a href="courses.html">Cursos</a></li>
+                <li><a href="certificates.html">Certificados</a></li>
+                <li><a href="services.html">Serviços</a></li>
+                <li><a href="tasks.html">Tarefas</a></li>
+                <li><a href="contact.html">Contato</a></li>
+                <li id="button"><a href="login.html"><button class="login-btn">Fazer login</button></a></li>
+                <li id="button"><a href="register.html"><button class="signup-btn">Cadastre-se</button></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="home">
+            <div class="boas_vindas">
+                <p id="subtitulo">Bem vindo a praticidade! </p>
+                <h1>Um novo apredizado</h1>
+                <p id="ead">Comece a se aperfeiçoar agora! Com uma vasta gama de
+                    tópicos e instruídos por especialistas, você pode estudar
+                    no seu próprio ritmo e de qualquer lugar. Aproveite esta
+                    oportunidade para adquirir novas habilidades e melhorar seu currículo.
+                </p>
+                <p id="subtitulo">Transforme seu futuro hoje com o Educa Free!</p>
+            </div>
+            <div id="figura">
+                <img src="imagem\mulher_pagina.png" alt="mulher_pagina" id="mulher_img">
+            </div>
+        </div>
+        <div class="tres_passos">
+            <p id="subtitulo">Três passos, três minutos...</p>
+            <h1>Tudo pode ser mais facil com Educa Free!</h1>
+        </div>
+        <div>
+            <div class="passos">
+                <div id="passos1">
+                    <img src="imagem/aprender.png" alt="aprender" id="passo1_img">
+                    <h1>Aprenda a programar</h1>
+                    <p>Aprender a programar pode ser surpreendentemente
+                        acessível graças aos recursos online e à lógica
+                        universal subjacente à programação. Com dedicação
+                        e prática, é possível superar os desafios iniciais
+                        e embarcar em uma jornada emocionante e recompensadora.</p>
+                </div>
+                <div id="passos2">
+                    <img src="imagem/explorar.png" alt="explorar" id="passo2_img">
+                    <h1>Explore a tecnologia</h1>
+                    <p>Explore a tecnologia e descubra um mundo de possibilidades
+                        infinitas. Seja o arquiteto do futuro digital, moldando o
+                        mundo com suas ideias e paixões. Viva a aventura da tecnologia
+                        e transforme o amanhã, hoje.</p>
+                </div>
+                <div id="passos3">
+                    <img src="imagem/computador.png" alt="computador" id="passo3_img">
+                    <h1>Tendências Tech</h1>
+                    <p>Explore a tecnologia e descubra um mundo de infinitas
+                        possibilidades. Seja o arquiteto do futuro digital,
+                        moldando o amanhã com suas ideias e paixões.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-slider">
+            <h1>Vídeos Mais Populares:</h1>
+            <section class="container">
+                <div class="card__container swiper">
+                   <div class="card__content">
+                      <div class="swiper-wrapper">
+                            <article class="card__article swiper-slide">
+                                <div class="card__image">
+                                    <a href="#">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVzlAHMW6AdSlUPKUvCm6wJ4n-HJftgM1h-Q&s" alt="image" class="card__img">
+                                    <div class="card__shadow"></div>
+                                    <h3 class="card__name">Curso de HTML5 e CSS3</h3>
+                                    <p class="card__description">
+                                        O Curso de HTML5 e CSS3 vai ensinar a criar sites
+                                        usando a linguagem de marcação hipertexto e
+                                        folhas de estilo em cascata.
+                                    </p>
+                                    </a>
+                                </div>
+                            </article>
+             
+                            <article class="card__article swiper-slide">
+                                <div class="card__image">
+                                    <a href="#">
+                                    <img src="https://i.ytimg.com/vi/S9uPNppGsGo/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBdufuoJdaVhVi1j6gQJgfUqD0T8w" alt="image" class="card__img">
+                                    <div class="card__shadow"></div>
+                                    <h3 class="card__name">Curso em vídeo - Pyton</h3>
+                                    <p class="card__description">
+                                        Neste vídeo você vai ver como é fácil começar
+                                        a programar e ganhará estímulo para continuar na carreira.
+                                    </p>
+                                    </a>
+                                </div>
+                            </article>
+             
+                            <article class="card__article swiper-slide">
+                                <div class="card__image">
+                                    <a href="#">
+                                    <img src="https://i.ytimg.com/vi/-FQP7hD-J6A/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBPA9IAjpQKbzYTVG_u2k_i6KludQ" alt="image" class="card__img">
+                                    <div class="card__shadow"></div>
+                                    <h3 class="card__name">TODAS AS TAGS HTML QUE VOCÊ PRECISA SABER</h3>
+                                    <p class="card__description">
+                                        Aprenda todas as tags mais utilizada no HTML.
+                                    </p>
+                                    </a>
+                                </div>
+                            </article>
+
+                            <article class="card__article swiper-slide">
+                                <div class="card__image">
+                                    <a href="#">
+                                    <img src="https://i.ytimg.com/vi/HN1UjzRSdBk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCJQ3N9WyZDQO3TnHEQmU5CeVPISQ" alt="image" class="card__img">
+                                    <div class="card__shadow"></div>
+                                    <h3 class="card__name">Desvendando o CSS Grid na prática</h3>
+                                    <p class="card__description">
+                                        O Grid tem o poder de ser bidimensional, dividindo nossa página em linhas e colunas
+                                        e deixando a página web flexível.
+                                    </p>
+                                    </a>
+                                </div>
+                            </article>
+       
+                            <article class="card__article swiper-slide">
+                                <div class="card__image">
+                                    <a href="#">
+                                    <img src="https://i.ytimg.com/vi/lHYV_H1526Q/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAL5DlUVlTTydpNnjebQXK_4DPzRA" alt="image" class="card__img">
+                                    <div class="card__shadow"></div>
+                                    <h3 class="card__name">Curso de SQL com MySQL</h3>
+                                    <p class="card__description">
+                                        Nesse curso você vai aprender a linguagem SQL
+                                        com o Curso de SQL com MySQL que promovo como bônus
+                                        em todos os meus cursos.
+                                    </p>
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="card__article swiper-slide">
+                                <div class="card__image">
+                                    <a href="#">
+                                    <img src="https://i.ytimg.com/vi/vGuqKIRWosk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACD_zrilmHTW11I-715_rMhAtyGA" alt="image" class="card__img">
+                                    <div class="card__shadow"></div>
+                                    <h3 class="card__name">API // Dicionário do Programador</h3>
+                                    <p class="card__description">
+                                        O Dicionário do Programador é o quadro semanal onde você
+                                        poderá aprender mais sobre termos, tecnologias ou palavras
+                                        do maravilhoso mundo da programação!
+                                    </p>
+                                    </a>
+                                </div>
+                            </article>
+                      </div>
+                   </div>
+       
+                   <!-- Botões de navegação -->
+                   <div class="swiper-button-next">
+                      <i class="ri-arrow-right-s-line"></i>
+                   </div>
+                   
+                   <div class="swiper-button-prev">
+                      <i class="ri-arrow-left-s-line"></i>
+                   </div>
+       
+                   <!-- Paginas -->
+                   <div class="swiper-pagination"></div>
+                </div>
+             </section>
+        </div>
+        <div>
+            <div class="por-que-educa-free">
+                <h1>Por que estudar na Educa Free?</h1>
+            </div>
+            <div>
+                <div class="por-que-educa">
+                    <div id="por-que1">
+                        <img src="imagem/gratuito.png" alt="aprender" id="por-que1_img">
+                        <h1>Cursos online gratuitos</h1>
+                        <p>Cursos online gratuitos podem ser excelentes se oferecidos por
+                            plataformas renomadas como a Educa Free. Avalie a qualidade pelo
+                            conteúdo, instrutores, feedback de alunos e certificação opcional.
+                        </p>
+                    </div>
+                    <div id="por-que2">
+                        <img src="imagem/ensino.png" alt="explorar" id="por-que2_img">
+                        <h1>Siga seu próprio ritimo</h1>
+                        <p>Respeitar seu ritmo de aprendizado é crucial para uma educação
+                            eficaz e prazerosa. Foco no seu progresso e celebre cada conquista,
+                            sem se comparar aos outros. Isso reduz o estresse e aumenta a motivação,
+                            destacando que o importante é o conhecimento adquirido, não a velocidade.</p>
+                    </div>
+                    <div id="por-que3">
+                        <img src="imagem/certificado.png" alt="computador" id="por-que3_img">
+                        <h1>Certificado de conclusão</h1>
+                        <p>Certificados de cursos comprovam suas habilidades, destacam seu currículo,
+                            aumentam suas chances de emprego e promoções, e demonstram seu comprometimento
+                            com o desenvolvimento profissional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-content">
+            <div id="footer-contacts">
+                <div id="footer-logo">
+                    <img src="imagem/logo.png" alt="logo" id="logo">
+                    <h1>Educa_Free</h1>
+            
+                </div>
+
+                <div id="footer-social-midea">
+                    <a href="#" class="footer-link" id="instagram"></a>
+                     <i class="fa-brands fa-instagram"></i>
+
+                    <a href="#" class="footer-link" id="facebook"></a>
+                        <i class="fa-brands fa-square-facebook"></i>
+
+                    <a href="#" class="footer-link" id="whatsapp"></a>
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                    <a href="#" class="footer-link" id="email"></a>
+                        <i class="fa-solid fa-envelope"></i>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li><h3>cursos</h3></li>
+                <li><a href="#" class="footer-link">tech</a></li>
+                <li><a href="#" class="footer-link">tech</a></li>
+                <li><a href="#" class="footer-link">tech</a></li>
+                <li><a href="#" class="footer-link">tech</a></li>
+            </ul>
+            <ul class="footer-list">
+                <li><h3>cursos</h3></li>
+                <li><a href="#" class="footer-link">tech</a></li>
+                <li><a href="#" class="footer-link">tech</a></li>
+                <li><a href="#" class="footer-link">tech</a></li>
+                <li><a href="#" class="footer-link">tech</a></li>
+            </ul>
+            <ul class="footer-list">
+                <li><h3>cursos</h3></li>
+                <li><a href="#" class="footer-link">tech</a></li>
+                <li><a href="#" class="footer-link">tech</a></li>
+                <li><a href="#" class="footer-link">tech</a></li>
+                <li><a href="#" class="footer-link">tech</a></li>
+
+            </ul>
+            <div>
+                <h3>increva-se</h3>
+
+                <p>não perca tempo e venha expandir seu conhecimento</p>
+
+                <div id="input-group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-solid fa-envelope"></i>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2024 all rights reserved
+        </div>
+    </footer>
+</body>
+</html>
+

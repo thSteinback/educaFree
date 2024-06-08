@@ -1,38 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cursos - EducaFree</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-    <script defer src="data.js"></script>
-</head>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EducaFree</title>
+        <link rel="stylesheet" href="styles.css">
+        <script defer src="script.js"></script>
+    </head>
 <body>
-    
-        <header>
-            <!-- NAVBAR-->
-            
-            <nav class="navbar">
-                <div class="navbar-logo">
-                    <a href="index.html">
-                        <img src="logo.png" alt="Logo">
-                        EducaFree
-                    </a>
-                </div>
-                <ul class="navbar-menu">
-                    <li><a href="about.html">Sobre</a></li>
-                    <li><a href="courses.html">Cursos</a></li>
-                    <li><a href="certificates.html">Certificados</a></li>
-                    <li><a href="services.html">Serviços</a></li>
-                    <li><a href="tasks.html">Tarefas</a></li>
-                    <li class="nav-onpage"><a href="contact.html" >Contato</a></li>
-                </ul>
-                <div class="navbar-buttons">
-                    <button class="login-btn">Fazer login</button>
-                    <button class="signup-btn">Cadastre-se</button>
-                </div>
-            </nav>
-        </header>       
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="home.html">
+                    <img src="imagem/logo.png" alt="Logo">
+                </a>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="courses.html">Cursos</a></li>
+                <li><a href="certificates.html">Certificados</a></li>
+                <li><a href="services.html">Serviços</a></li>
+                <li><a href="tasks.html">Tarefas</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+            <div class="navbar-buttons">
+                <button class="login-btn">Fazer login</button>
+                <button class="signup-btn">Cadastre-se</button>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menu()"><img src="imagem\menu.png" alt="menu" class="icon"></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul class="navbar-menu">
+                <li><a href="#">Sobre</a></li>
+                <li><a href="courses.html">Cursos</a></li>
+                <li><a href="certificates.html">Certificados</a></li>
+                <li><a href="services.html">Serviços</a></li>
+                <li><a href="tasks.html">Tarefas</a></li>
+                <li><a href="contact.html">Contato</a></li>
+                <li id="button"><a href="login.html"><button class="login-btn">Fazer login</button></a></li>
+                <li id="button"><a href="register.html"><button class="signup-btn">Cadastre-se</button></a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <!--CONTEUDO DA PÁGINA-->
+    </main> 
 </body>
 </html>
