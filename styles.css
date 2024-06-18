@@ -877,3 +877,107 @@ footer{
     padding: 0.5rem;
     border-radius: 5px;
 }
+/* Estilos do certificado */
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.certificate-container {
+    background: white;
+    width: 800px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    border: 5px solid #2c3e50;
+    margin-top: 20px; /* Espaçamento abaixo do header */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.certificate-header {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.certificate-logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.certificate-header h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #2c3e50;
+}
+
+.certificate-body p, .certificate-body h2, .certificate-body h3 {
+    margin: 10px 0;
+    color: #34495e;
+    text-align: center;
+}
+
+.student-name {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #2980b9;
+}
+
+.course-name {
+    font-size: 22px;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+.completion-date {
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #8e44ad;
+}
+
+.course-hours {
+    font-size: 18px;
+    font-weight: bold;
+    color: #c0392b;
+}
+
+.certificate-footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.signature {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signature-image {
+    width: 150px;
+    height: auto;
+}
+
+.signature-name {
+    margin: 10px 0 0;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+.signature-title {
+    font-size: 16px;
+    color: #7f8c8d;
+}
