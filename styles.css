@@ -878,7 +878,7 @@ footer{
     border-radius: 5px;
 }
 /* Estilos do certificado */
-main {
+.main-certificates {
     width: 100%;
     display: flex;
     justify-content: center;
