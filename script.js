@@ -1,6 +1,21 @@
-//TODA PARTE DE RESPONSIVIDADE E ENQUADRAMENTO DAS PAGINAS
-
 document.addEventListener("DOMContentLoaded", () => {
+    // Adiciona eventos para os botões de login e cadastro
+    const loginBtn = document.querySelector('.login-btn');
+    const signupBtn = document.querySelector('.signup-btn');
+
+    if (loginBtn) {
+        loginBtn.addEventListener('click', () => {
+            window.location.href = 'login.html';
+        });
+    }
+
+    if (signupBtn) {
+        signupBtn.addEventListener('click', () => {
+            window.location.href = 'register.html';
+        });
+    }
+
+    // Código existente para responsividade e carregamento de cursos
     const featuredCoursesContainer = document.getElementById('featured-courses');
     const allCoursesContainer = document.getElementById('all-courses');
     const courseDetailContainer = document.getElementById('course-detail');
@@ -79,6 +94,7 @@ function createCourseElement(course) {
     });
     return courseElement;
 }
+
 function displayCourseDetail(container) {
     const params = new URLSearchParams(window.location.search);
     const courseId = parseInt(params.get('id'));
