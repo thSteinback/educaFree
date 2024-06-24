@@ -241,6 +241,10 @@ header {
     height: auto;
     padding: 0 25px;
 }
+
+.titulo-home{
+    font-size: 4rem;
+}
 .boas_vindas {
     margin: 20px 30px;
     padding: 20px;
@@ -266,6 +270,43 @@ header {
     height: auto;
     margin-right: 70px;
     float: right;
+    margin-top: 25px;
+}
+
+
+.btn-home {
+    margin-top: 50px;
+    margin-right: 50px;
+    display: flex;
+    align-items: right;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.email-input {
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50px 0 0 50px;
+    font-size: 16px;
+    outline: none;
+    flex: 1;
+}
+
+.btn-cadastro {
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 0 50px 50px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-cadastro:hover {
+    background-color: #333;
 }
 /*Responsividade com tamanho de pagina/mobile - INTRODUÇÃO DA PAGINA*/
 @media (min-width: 768px) and (max-width: 1024px){
