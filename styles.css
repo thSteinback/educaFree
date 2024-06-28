@@ -990,15 +990,7 @@ body {
 
 
 
-.navbar-buttons .login-btn,
-.navbar-buttons .signup-btn {
-    background-color: #555;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    margin-left: 10px;
-    cursor: pointer;
-}
+
 
 .contact-section {
     max-width: 650px;
