@@ -1054,6 +1054,245 @@ body {
     margin-bottom: 10px;
 }
 
+/* --------------------------------- FOOTER ----------------------------------- */
+/*------------------------------------------------------------------------------*/
+/* ----------------------- PAGINA DE LOGIN E CADASTRO---------------------------*/
 
+.container-background {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 6px;
+    margin-left: 6px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #C1DEE8, #F6A355);
+}
 
+#woman_img {
+    max-width: 800px;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.container-login {
+    position: relative;
+    width: 399px;
+    height: 487px;
+    margin-right: 350px;
+    justify-content: space-between;
+    background: #ffffff;
+    border: 2px solid #000;
+    border-radius: 11px;
+    align-items: center;
+    text-align: center;
+}
+
+.container-login h1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 315px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 60px 40px;
+    padding-top: 15px;
+    padding-left: 5px;
+    margin-top: 45px;
+    background-color: #fbf7f7;   
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+    color: #162938
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: 10px;
+    font-size: 15px;
+    color: #00000050;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 0 35px 0 5px;
+}
+
+.btn-login {
+    border: none;
+    padding: 15px 60px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 25px;
+    background: linear-gradient(to right, #C1DEE8, #F6A355);
+}
+
+.btn-login:hover {
+    box-shadow: 2px 2px 2px #878787,
+    -2px -2px 2px #CACACA;
+}
+
+.login-register {
+    font-size: 15px;
+    text-align: center;
+    color: #162938;
+    font-weight: 500;
+}
+
+.login-register p a {
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+}
+
+/* PAGINA DE CADASTRO */
+
+.container-register {
+    position: relative;
+    width: 399px;
+    height: 530px;
+    margin-right: 350px;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border: 2px solid #000;
+    border-radius: 11px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.container-register h1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form-content {
+    position: relative;
+    width: 315px;
+    height: 45px;
+    padding-left: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    background-color: #fbf7f7;   
+}
+
+.form-content label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+    color: #162938
+}
+
+.form-content input {
+    width: 100%;
+    height: 130%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 0 35px 0 5px;
+}
+
+.form-content input:focus~label {
+    top: 10px;
+    font-size: 15px;
+    color: #00000050;
+}
+
+.form-content a{
+    position: absolute;
+    bottom: -20px;
+    left: 5;
+    font-size: small;
+    visibility: hidden;
+}
+
+.form-content.error a{
+    color: #ff3b25;
+}
+
+.form-content.error {
+    border-color: #ff3b25;
+    visibility: visible;
+}
+
+.btn-register {
+    border: none;
+    padding: 15px 60px;
+    margin-bottom: 10px;
+    margin-top: -5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 25px;
+    background: linear-gradient(to right, #C1DEE8, #F6A355);
+}
+
+.btn-register:hover {
+    box-shadow: 2px 2px 2px #878787,
+    -2px -2px 2px #CACACA;
+}
+
+.register-login {
+    font-size: 15px;
+    text-align: center;
+    color: #162938;
+    font-weight: 500;
+}
+
+.register-login p a {
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-login p a:hover {
+    text-decoration: underline;
+}
 

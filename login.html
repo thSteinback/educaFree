@@ -45,17 +45,31 @@
     </header>
 
     <main>
-        <div class="quadrado-login">
-            <div class="conecte-se">Conecte-se e comece a aprender!</div>
-                <input type="email" class="caixa-texto-email" placeholder=" Email">
-                <input type="password" class="caixa-texto-senha" placeholder=" Senha">
-                <button class="botao-login">Efetuar Login</button>
-                <div style="margin-top: 20px;">
-                    <span style="font-size: 14px;">Não tem uma conta?</span>
-                    <button class="botao-cadastro">Cadastre-se</button>
-                </div>
-                   
+        <div class="container-background">
+            <div class="container-login">
+                <h1>Conecte-se e comece a aprender!</h1>
+                <form action="#">  
+                    <div class="input-box">
+                        <input type="email" id="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" required>
+                        <label>Senha</label>
+                    </div> 
+                </form>     
+                <button class="btn-login">Efetuar Login</button> 
+                <div class="login-register">
+                    <p>Não tem uma conta? <a href="register.html">Cadastre-se</a></p>
+                </div>                         
+            </div>
+            <div>
+                <img src="imagem\mulher_pagina.png" alt="mulher_pagina" id="woman_img">
+            </div>
         </div>
+        
+
     </main>
+
 </body>
 </html>

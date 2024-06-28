@@ -45,18 +45,39 @@
     </header>
     
     <main>
-        <div class="quadrado-login">
-            <div class="junte-se">Junte-se ao EducaFree e comece a aprender!</div>
-                <input type="text" class="caixa-texto-nome" placeholder=" Nome Completo">
-                <input type="email" class="caixa-texto-email-registro" placeholder=" Email">
-                <input type="password" class="caixa-texto-senha" placeholder=" Criar Senha">
-                <button class="botao-cadastre-se">Cadastre-se</button>
-                <div style="margin-top: 20px;">
-                    <span style="font-size: 14px;">Já tem uma conta?</span>
-                    <button class="botao-faça-login">Faça Login</button>
-                </div>
-                   
+        <div class="container-background">
+            <div class="container-register">
+                <h1>Junte-se ao EducaFree e comece a aprender!</h1> 
+                <form id="form" class="form"> 
+                    <div class="form-content">
+                        <input type="text" id="username">
+                        <label for="username">Nome</label>
+                        <a>Mensagem de erro</a>
+                    </div>
+                    <div class="form-content">
+                        <input type="email" id="email">
+                        <label for="email">Email</label>
+                        <a>Mensagem de erro</a>
+                    </div>
+                    <div class="form-content">
+                        <input type="password" id="password">
+                        <label for="password">Senha</label>
+                        <a>Mensagem de erro</a>
+                    </div>
+                    <div class="form-content">
+                        <input type="password" id="password-confirmation">
+                        <label for="password-confirmation">Confirmar Senha</label>
+                        <a>Mensagem de erro</a>
+                    </div>
+                    <button type="submit" class="btn-register">Cadastre-se</button>  
+                </form>    
+                <div class="register-login">
+                    <p>Já tem uma conta? <a href="login.html">Faça Login</a></p>
+                </div>                         
+            </div>
+            <div>
+                <img src="imagem\mulher_pagina.png" alt="mulher_pagina" id="woman_img">
+            </div>
         </div>
-    </main>
 </body>
 </html>
