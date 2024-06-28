@@ -241,6 +241,10 @@ header {
     height: auto;
     padding: 0 25px;
 }
+
+.titulo-home{
+    font-size: 4rem;
+}
 .boas_vindas {
     margin: 20px 30px;
     padding: 20px;
@@ -266,6 +270,43 @@ header {
     height: auto;
     margin-right: 70px;
     float: right;
+    margin-top: 25px;
+}
+
+
+.btn-home {
+    margin-top: 50px;
+    margin-right: 50px;
+    display: flex;
+    align-items: right;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.email-input {
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50px 0 0 50px;
+    font-size: 16px;
+    outline: none;
+    flex: 1;
+}
+
+.btn-cadastro {
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 0 50px 50px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-cadastro:hover {
+    background-color: #333;
 }
 /*Responsividade com tamanho de pagina/mobile - INTRODUÇÃO DA PAGINA*/
 @media (min-width: 768px) and (max-width: 1024px){
@@ -453,9 +494,7 @@ header {
     grid-template-columns: repeat(3, 1fr);
     padding: 0px;
     gap: 100px;
-    margin-top: 50px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin: 50px 150px 150px 150px;
 }
 #por-que1, #por-que2, #por-que3 {
     display: flex;
@@ -664,54 +703,150 @@ a{
 /* -------------------------- MAIN PAGINA INICIAL ------------------------*/
 /*------------------------------------------------------------------------*/
 /* -------------------------------- FOOTER -------------------------------*/
+
 footer{
-    width: 100%;
-}
-#footer-content{
-    background: linear-gradient(to right, #C1DEE8, #F6A355);
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    padding: 20px;
-}
-#footer-logo{
-    display: flex;
-    align-items: center;
-    padding: 25px 20px;
-    justify-content: center;
-}
-#logo {
-    max-width: 100px; /* Ajuste este valor conforme necessário */
-    height: auto;
-    margin-right: 5px; /* Adiciona algum espaço entre a imagem e o texto */
+    padding: 1rem;
+    margin: 2px 2px;
+    border-radius: 10px;
     position: relative;
+    bottom: 0px;
+    background: linear-gradient(to right, #C1DEE8, #f6a355);
 }
-#footer-contacts h1{
-    margin-right: 25px;
-    font-size: 25px;
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 10px;
+    padding: 10px;
 }
-#footer-social-midea{
+#logo-footer{
+    max-width: 100px;
+    height: auto;
+}
+.footer-container-esquerdo{
     display: flex;
-    gap: 20px;
+    flex-direction: column;
     justify-content: center;
 }
-#footer-social-midia .footer-link{
+.footer-links{
     display: flex;
     align-items: center;
+}
+.footer-links a, .footer-about a{
+    display: flex;
+    text-decoration: none;
+    color: #33383b;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 5px;
+    font-size: 18px;
+}
+.footer-links a:before {/*acrescenta barrinha lateral entre os links*/
+    content: "|";
+    font-size: 18px;
+    left: 0;
+    color: #33383b;
+    padding-right: 5px;
+  }
+  .footer-links .link-1:before { /*retira a barinha lateral do home*/
+    content: none;
+  }
+.footer-links a:hover {
+    color: #F6A355; /* Altera a cor do texto ao passar o mouse */
+}
+.footer-container-centro{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 50px;
-    height: auto;
-    color: rgb(255, 255, 255);
-    border-radius: 50%;
 }
-#instagram {
-    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+.footer-container-centro i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 18px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 30px;
+	margin: 10px 15px;
 }
-#facebook {
-    background-color: #4267b3;
+.footer-container-centro p{/*deixa o icom alinhado com telefone e email*/
+	display: inline-block;
+	color: #33383b;
+    font-weight:400;
+	vertical-align: middle;
+	margin:0;
 }
-#whatsapp {
-    background-color: #25d366;
+.footer-container-direito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+.footer-container-direito p{
+    display: inline-block;
+	color: #33383b;
+    font-size: 16px;
+	vertical-align: middle;
+	margin:0;
+}
+.footer-icons{
+	margin-top: 30px;
+    text-align: end;
+}
+.footer-container-direito .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+	font-size: 21px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 37px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+.footer-container-direito .footer-icons a:hover{
+    background: #f6a355;
+}
+.bottom center{
+    padding: 5px;
+    font-size: 12px;
+    background: linear-gradient(to right, #C1DEE8, #f6a355);
+}
+.bottom center span{
+    color: #414040;
+}
+.bottom center a{
+    color: #414040;
+    text-decoration: none;
+}
+.bottom center a:hover{
+    text-decoration: underline;
+}
+/*Responsividade com tamanho de pagina/mobile - Footer*/
+@media screen and (min-width: 1000px)and (max-width: 1066px) {
+    .footer-links a, .footer-about a{
+        font-size: 14px;
+    }
+    .footer-container-direito p{
+        font-size: 14px;
+
+    }
+}
+@media screen and (max-width: 1000px) {
+    .footer-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-links a, .footer-about a{
+        font-size: 14px;
+    }
+    .footer-container-direito p{
+        font-size: 14px;
+
+    }
+}
+    
 /* -------------------------------- FOOTER ------------------------------ */
 /*------------------------------------------------------------------------*/
 /* --------------------------- PAGINA DE LOGIN ---------------------------*/
@@ -990,15 +1125,7 @@ body {
 
 
 
-.navbar-buttons .login-btn,
-.navbar-buttons .signup-btn {
-    background-color: #555;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    margin-left: 10px;
-    cursor: pointer;
-}
+
 
 .contact-section {
     max-width: 650px;
