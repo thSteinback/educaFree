@@ -53,12 +53,6 @@ header {
     background-color: white;
     border-radius: 20px;
 }
-.navbar-menu .nav-onpage {
-    background-color: black;
-}
-.navbar-menu .nav-onpage a {
-    color: white; 
-}
 .navbar-menu li {
     margin: 0px 15px; /* Aumenta o espaço entre os itens do menu */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Adiciona transição suave */  
@@ -241,6 +235,9 @@ header {
     height: auto;
     padding: 0 25px;
 }
+.titulo-home{
+    font-size: 3rem;
+}
 .boas_vindas {
     margin: 20px 30px;
     padding: 20px;
@@ -266,6 +263,38 @@ header {
     height: auto;
     margin-right: 70px;
     float: right;
+}
+.btn-home {
+    margin-top: 50px;
+    margin-right: 50px;
+    display: flex;
+    align-items: right;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    max-height: 60px;
+}
+.email-input {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px 0 0 50px;
+    font-size: 14px;
+    outline: none;
+    flex: 1;
+}
+.btn-cadastro {
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 0 50px 50px 0;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn-cadastro:hover {
+    background-color: #333;
 }
 /*Responsividade com tamanho de pagina/mobile - INTRODUÇÃO DA PAGINA*/
 @media (min-width: 768px) and (max-width: 1024px){
@@ -453,9 +482,7 @@ header {
     grid-template-columns: repeat(3, 1fr);
     padding: 0px;
     gap: 100px;
-    margin-top: 50px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin: 50px 150px 150px 150px;
 }
 #por-que1, #por-que2, #por-que3 {
     display: flex;
@@ -534,7 +561,6 @@ header {
     }
 }
 /*=============== CARD ===============*/
-
 .card-slider *{
     box-sizing: border-box;
     padding: 0;
@@ -772,7 +798,9 @@ footer{
     text-decoration-line: underline;
     cursor: pointer;
 }
-/* PAGINA DE CADASTRO */
+/* ------------------------- PAGINA DE LOGIN -----------------------------*/
+/*------------------------------------------------------------------------*/
+/*------------------------- PAGINA DE CADASTRO ---------------------------*/
 .junte-se {
 
     position: absolute;
@@ -835,31 +863,36 @@ footer{
     padding: 0.5rem 1rem;
     text-decoration: none;
 }
- 
+.course-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cursos-disponiveis{
+    justify-content:center;
+}
 .courses-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    justify-content: center;
+    width: 80%;
 }
- 
 .course {
     background-color: #fff;
     padding: 1rem;
-    border-radius: 5px;
-    width: calc(33.333% - 2rem);
+    border-radius: 10px;
+    width: calc(25% - 2rem);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     text-align: center;
 }
- 
 .course h3 {
     margin: 0;
 }
- 
 .course p {
     margin: 0.5rem 0;
 }
- 
 .course-detail {
     background-color: #fff;
     padding: 2rem;
@@ -877,7 +910,9 @@ footer{
     padding: 0.5rem;
     border-radius: 5px;
 }
-/* Estilos do certificado */
+/* --------------------------- PAGINA DE CURSOS --------------------------*/
+/*------------------------------------------------------------------------*/
+/* ------------------------------ CERTIFICADO ----------------------------*/
 .main-certificates {
     width: 100%;
     display: flex;
@@ -981,17 +1016,14 @@ footer{
     font-size: 16px;
     color: #7f8c8d;
 }
-/* contato*/
+/* ------------------------------ CERTIFICADO ----------------------------*/
+/*------------------------------------------------------------------------*/
+/* --------------------------- PAGINA DE CONTATO -------------------------*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-
-
-
-
-
 .contact-section {
     max-width: 650px;
     margin: 60px auto;
@@ -1000,22 +1032,18 @@ body {
     border-radius: 8px;
     background-color:linear-gradient(to right, #C1DEE8, #F6A355);
 }
-
 .contact-section h2 {
     text-align: center;
     margin-bottom: 20px;
 }
-
 .contact-form .form-group {
     margin-bottom: 25px;
     padding: 0.5rem;
 }
-
 .contact-form label {
     display: block;
     margin-bottom: 5px;
 }
-
 .contact-form input,
 .contact-form textarea {
     width: 100%;
@@ -1023,7 +1051,6 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
 .contact-form .submit-btn {
     width: 100%;
     background-color: #007bff;
@@ -1033,25 +1060,166 @@ body {
     border-radius: 4px;
     cursor: pointer;
 }
-
 .contact-info {
     margin-top: 30px;
 }
-
 .contact-info h3 {
     margin-bottom: 15px;
 }
-
 .contact-info p {
     margin-bottom: 10px;
 }
+/* --------------------------- PAGINA DE CONTATO -------------------------*/
+/*------------------------------------------------------------------------*/
+/* -------------------------------- FOOTER -------------------------------*/
+footer{
+    padding: 1rem;
+    margin: 2px 2px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 0px;
+    background: linear-gradient(to right, #C1DEE8, #f6a355);
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 10px;
+    padding: 10px;
+}
+#logo-footer{
+    max-width: 100px;
+    height: auto;
+}
+.footer-container-esquerdo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-links{
+    display: flex;
+    align-items: center;
+}
 
+.footer-links a, .footer-about a{
+    display: flex;
+    text-decoration: none;
+    color: #33383b;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 5px;
+    font-size: 18px;
+}
+.footer-links a:before {/*acrescenta barrinha lateral entre os links*/
+    content:"|";
+    font-size: 18px;
+    left: 0;
+    color: #33383b;
+    padding-right: 5px;
+}
+.footer-links .link-1:before { /*retira a barinha lateral do home*/
+    content: none;
+}
+.footer-links a:hover {
+    color: #F6A355; /* Altera a cor do texto ao passar o mouse */
+}
+.footer-container-centro{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-container-centro i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 18px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 30px;
+	margin: 10px 15px;
+}
+.footer-container-centro p{/*deixa o icom alinhado com telefone e email*/
+	display: inline-block;
+	color: #33383b;
+    font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+.footer-container-direito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-container-direito p{
+    display: inline-block;
+	color: #33383b;
+    font-size: 16px;
+	vertical-align: middle;
+	margin:0;
+}
+.footer-icons{
+	margin-top: 30px;
+    text-align: end;
+}
+.footer-container-direito .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+	font-size: 21px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 37px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+.footer-container-direito .footer-icons a:hover{
+    background: #f6a355;
+}
+.bottom center{
+    padding: 5px;
+    font-size: 12px;
+    background: linear-gradient(to right, #C1DEE8, #f6a355);
+}
+.bottom center span{
+    color: #414040;
+}
+.bottom center a{
+    color: #414040;
+    text-decoration: none;
+}
+.bottom center a:hover{
+    text-decoration: underline;
+}
+/*Responsividade com tamanho de pagina/mobile - Footer*/
+@media screen and (min-width: 1000px)and (max-width: 1066px) {
+    .footer-links a, .footer-about a{
+        font-size: 14px;
+    }
+    .footer-container-direito p{
+        font-size: 14px;
+
+    }
+}
+@media screen and (max-width: 1000px) {
+    .footer-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-links a, .footer-about a{
+        font-size: 14px;
+    }
+    .footer-container-direito p{
+        font-size: 14px;
+    }
+}
 /* --------------------------------- FOOTER ----------------------------------- */
 /*------------------------------------------------------------------------------*/
 /* ----------------------- PAGINA DE LOGIN E CADASTRO---------------------------*/
 
 .container-background {
-    
     display: flex;
     justify-content: center;
     align-items: center;
