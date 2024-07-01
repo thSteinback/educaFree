@@ -46,8 +46,8 @@ header {
 .navbar-menu {
     display: flex;
     list-style: none;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 8%;
+    margin-left: 8%;
     padding: 0;
     flex-grow: 1;
     justify-content: center;
@@ -61,7 +61,7 @@ header {
     color: white; 
 }
 .navbar-menu li {
-    margin: 0px 15px; /* Aumenta o espaço entre os itens do menu */
+    margin: 0px 25px; /* Aumenta o espaço entre os itens do menu */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Adiciona transição suave */  
 }
 .navbar-menu li:hover {
