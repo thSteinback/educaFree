@@ -45,8 +45,8 @@ header {
 .navbar-menu {
     display: flex;
     list-style: none;
-    margin-right: 8%;
-    margin-left: 8%;
+    margin-right: 20px;
+    margin-left: 20px;
     padding: 0;
     flex-grow: 1;
     justify-content: center;
@@ -54,7 +54,7 @@ header {
     border-radius: 20px;
 }
 .navbar-menu li {
-    margin: 0px 25px; /* Aumenta o espaço entre os itens do menu */
+    margin: 0px 20px; /* Aumenta o espaço entre os itens do menu */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Adiciona transição suave */  
 }
 .navbar-menu li:hover {
@@ -975,6 +975,17 @@ footer{
 }
 .cursos-disponiveis{
     justify-content:center;
+    margin: 40px;
+}
+.cursos-disponiveis h2{
+    margin: 25px;
+    margin-left: 80px;
+    font-size: 24px;
+}
+.cursos-disponiveis p{
+    margin: 5px;
+    margin-left: 100px;
+    font-size: 16px;
 }
 .courses-container {
     display: flex;

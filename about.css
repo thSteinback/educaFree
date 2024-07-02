@@ -232,10 +232,13 @@ header {
 }
 
 /* ----------------------------- PAGINA ABOUT ----------------------------*/
-
+.about *{
+    padding: 0; /* Remove o padding de todos os elementos dentro da navbar */
+    margin: 0; /* Remove a margin de todos os elementos dentro da navbar */
+}
 .about-intro {
     text-align: center;
-    padding: 50px 450px;
+    padding: 50px 200px;
     background-color: #f5f5f5;
 }
 .about-intro h1 {
@@ -243,12 +246,12 @@ header {
     font-weight: bold;
     max-width: 100px; 
     margin: 0;
+    text-align: justify;
 }
 .home-about {
     background: linear-gradient(to right, #C1DEE8, #F6A355);
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    margin: 15px 0px;
     height: auto;
     padding: 0 25px;
     margin-bottom: 100px;
@@ -256,27 +259,31 @@ header {
 .nossa-missao {
     margin: 30px;
     margin-bottom: 10px;
-    margin-left: 360px;
+    margin-left: 300px;
     padding: 20px;
     font-weight: 1000;
 }
 .texto-missao {
-    margin-left: 360px;
+    margin-left: 280px;
     margin-right: 11px;
     padding-left: 20px;
     margin-bottom: 20px;
     font-weight:500;
+    word-spacing: 5px;
+    line-height: 25px;
 }
 .botao-missao {
-    margin-left: 375px;
+    margin-left: 300px;
     padding: 20px;
-    margin-right: 200px;
+    margin-right: 180px;
     margin-top: 20px;
     background-color: #F6A355;
     font-weight: bold;
     margin-bottom: 50px;
     border-radius: 10px;
     border: none;
+    width: 200px;
+    
 }
 a {
     text-decoration: none;
