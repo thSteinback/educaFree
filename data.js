@@ -9,6 +9,7 @@ const courses = [
         lessons: [ {
             title: "Noções básicas de HTML",
             youtubeLink: "https://www.youtube.com/watch?v=3oSIqIqzN3M"
+            
         },
         {
             title: "Fundamentos de CSS",

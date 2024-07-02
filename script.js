@@ -105,11 +105,13 @@ function displayCourseDetail(container) {
             <h2>${course.title}</h2>
             <p>${course.description}</p>
             <ul>
-                ${course.lessons.map(lesson => `
+                ${course.lessons.map(lesson => `                              
                     <li>
+                    <span> </span>
+                    <span> </span>
                         <span>${lesson.title}</span>
-                        <a href="${lesson.youtubeLink}" target="_blank" class="btn btn-primary btn-sm ml-2">Watch on YouTube</a>
                     </li>
+                    <iframe src="https://www.youtube.com/embed/9YffrCViTVk" width="300" height="200" frameborder="3" allowfullscreen></iframe>
                 `).join('')}
             </ul>
             <a href="courses.html" class="btn btn-secondary">Voltar</a>

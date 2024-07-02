@@ -1016,13 +1016,15 @@ footer{
 }
  
 .course-detail ul {
+    display: flex;
     list-style: none;
     padding: 0;
 }
  
 .course-detail ul li {
-    background-color: #f4f4f4;
-    margin: 0.5rem 0;
+    
+    background: linear-gradient(to right, #c0cbcf, #F6A355);
+    margin: 0rem 0;
     padding: 0.5rem;
     border-radius: 5px;
 }
