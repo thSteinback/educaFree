@@ -903,7 +903,7 @@ footer{
     font-weight: 400;
     padding: 0 35px 0 5px;
 }
-.form-content input:focus~label {
+.form-content input:focus~label, .form-content input:not(:placeholder-shown)~label {
     top: 10px;
     font-size: 15px;
     color: #00000050;
@@ -917,6 +917,7 @@ footer{
 }
 .form-content.error a{
     color: #ff3b25;
+    visibility: visible;
 }
 .form-content.error {
     border-color: #ff3b25;

@@ -128,32 +128,32 @@ const username = document.getElementById("username");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const passwordConfirmation = document.getElementById("password-confirmation");
-
+ 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
-
+ 
     checkForm();
-}) 
-
+})
+ 
 username.addEventListener("blur", () => {
     checkInputUsername();
 })
-
+ 
 email.addEventListener("blur", () => {
     checkInputEmail();
 })
-
+ 
 password.addEventListener("blur", () => {
     checkInputPassword();
 })
-
+ 
 passwordConfirmation.addEventListener("blur", () => {
     checkInputPasswordConfirmation();
 })
-
+ 
 function checkInputUsername(){
     const usernameValue = username.value;
-
+ 
     if(usernameValue === ""){
         errorInput(username, "Preencha seu nome.")
     }else{
@@ -161,10 +161,10 @@ function checkInputUsername(){
         formItem.className = "form-content"
     }
 }
-
+ 
 function checkInputEmail(){
     const emailValue = email.value;
-
+ 
     if(emailValue === ""){
         errorInput(email, "O email é obrigatório.")
     }else{
@@ -172,24 +172,24 @@ function checkInputEmail(){
         formItem.className = "form-content"
     }
 }
-
+ 
 function checkInputPassword(){
     const passwordValue = password.value;
-
+ 
     if(passwordValue === ""){
         errorInput(password, "A senha é obrigatória.")
-    }else if(passwordValue.lenght < 8){
+    }else if(passwordValue.length < 8){
         errorInput(password, "A senha precisa ter no mínimo 8 caracteres.")
     }else{
         const formItem = password.parentElement;
         formItem.className = "form-content"
     }  
 }
-
+ 
 function checkInputPasswordConfirmation(){
     const passwordValue = password.value;
     const confirmationPasswordValue = passwordConfirmation.value;
-
+ 
     if(confirmationPasswordValue === ""){
         errorInput(passwordConfirmation, "A confirmação de senha é obrigatória.")
     }else if(confirmationPasswordValue !== passwordValue){
@@ -198,31 +198,49 @@ function checkInputPasswordConfirmation(){
         const formItem = passwordConfirmation.parentElement;
         formItem.className = "form-content"
     }
-        
+       
 }
-
+ 
 function checkForm(){
     checkInputUsername();
     checkInputEmail();
     checkInputPassword();
     checkInputPasswordConfirmation();
-
+ 
     const formItems = form.querySelectorAll(".form-content")
-
+ 
     const isValid = [...formItems].every((item) => {
         return item.className === "form-content"
     });
-
+ 
 }
-
+ 
 function errorInput(input, message){
     const formItem = input.parentElement;
     const textMessage = formItem.querySelector("a")
-
+ 
     textMessage.innerText = message;
-
-    formItem.clasName = "form-content error"
+ 
+    formItem.className = "form-content error"
 }
+ 
+document.addEventListener("DOMContentLoaded", function() {
+    const inputs = document.querySelectorAll(".form-content input");
+ 
+    inputs.forEach(input => {
+        input.addEventListener("blur", function() {
+            if (input.value.trim() !== "") {
+                input.classList.add("not-empty");
+            } else {
+                input.classList.remove("not-empty");
+            }
+        });
+ 
+        if (input.value.trim() !== "") {
+            input.classList.add("not-empty");
+        }
+    });
+});
 //responsividade tamanho da pagina/mobile//
 function menu() { //troca do icon//
     let menuMobile = document.querySelector('.mobile-menu');
